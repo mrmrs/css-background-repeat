@@ -1,0 +1,29 @@
+{
+  "name": "css-background-repeat",
+  "version": "0.0.1",
+  "homepage": "http://github.com/mrmrs/css-background-repeat",
+  "description": "Css module of single purpose classes for background repeat",
+  "keywords": [
+    "css",
+    "oocss",
+    "",
+    ""
+  ],
+  "css-background-repeat": {
+    "type": "git",
+    "url": "http://github.com/mrmrs/css-background-repeat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrmrs/repo/issues",
+    "email": "hi@mrmrs.cc"
+  },
+  "author": {
+    "name": "Adam Morse",
+    "email": "hi@mrmrs.cc",
+    "url": "http://mrmrs.cc"
+  },
+  "contributors": [
+    { "name": "Adam Morse", "email": "hi@mrmrs.cc" }
+  ],
+  "license": "MIT"
+}
