@@ -6,8 +6,7 @@
   "keywords": [
     "css",
     "oocss",
-    "",
-    ""
+    "background-repeat"
   ],
   "css-background-repeat": {
     "type": "git",
