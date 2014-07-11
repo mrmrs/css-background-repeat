@@ -26,7 +26,7 @@ or download the css on github and include in your project.
   .bg-spc {    background-repeat: space; }
   .bg-rnd {    background-repeat: round; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .bg-norep-ns {  background-repeat: no-repeat; }
   .bg-x-ns {      background-repeat: repeat-x; }
   .bg-y-ns {      background-repeat: repeat-y; }
@@ -35,7 +35,7 @@ or download the css on github and include in your project.
   .bg-rnd-ns {    background-repeat: round; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .bg-norep-m {  background-repeat: no-repeat; }
   .bg-x-m {      background-repeat: repeat-x; }
   .bg-y-m {      background-repeat: repeat-y; }
@@ -44,7 +44,7 @@ or download the css on github and include in your project.
   .bg-rnd-m {    background-repeat: round; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .bg-norep-l {  background-repeat: no-repeat; }
   .bg-x-l {      background-repeat: repeat-x; }
   .bg-y-l {      background-repeat: repeat-y; }
