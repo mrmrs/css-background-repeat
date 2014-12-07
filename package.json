@@ -1,7 +1,7 @@
 {
   "name": "css-background-repeat",
   "style": "background-repeat.css",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "http://github.com/mrmrs/css-background-repeat",
   "description": "Css module of single purpose classes for background repeat",
   "keywords": [
