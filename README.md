@@ -1,92 +1,110 @@
-# CSS BACKGROUND REPEAT
+# css-background-repeat 0.0.7
 
-  Mobile-first classes for css-background-repeat.
-  Set the desired css-background-repeat on any element for any breakpoint.
-  Base class names are namespaced across three breakpoints:
+Css module of single purpose classes for background repeat
 
-*  -ns = not-small (covers everything larger than mobile)
-*  -m  = medium
-*  -l  = large
+#### Stats
 
-## Install
-Grab the css partial from github and include it in your project or alternatively
-you can install it via npm:
+254 | 24 | 24
+---|---|---
+bytes | selectors | declarations
+
+## Installation
+
+#### With [npm](https://npmjs.com)
+
 ```
 npm install --save-dev css-background-repeat
 ```
-View on [npm](https://www.npmjs.org/package/css-background-repeat)
 
+#### With Git
 
-## File Size
-
-1.3K background-repeat.css
-980B background-repeat.min.css
-218B minified and gzipped
-
-## The Code
 ```
-  .bg-norep {  background-repeat: no-repeat; }
-  .bg-x {      background-repeat: repeat-x; }
-  .bg-y {      background-repeat: repeat-y; }
-  .bg-rep {    background-repeat: repeat; }
-  .bg-spc {    background-repeat: space; }
-  .bg-rnd {    background-repeat: round; }
+git clone https://github.com/tachyons-css/css-background-repeat
+```
 
+## Usage
+
+#### Using with [PostCSS](https://github.com/postcss/postcss)
+
+Import the css module
+
+```css
+@import "css-background-repeat";
+```
+
+Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+
+```sh
+$ npm i -g tachyons-cli
+$ tachyons-cli path/to/css-file.css > dist/t.css
+```
+
+#### Using the CSS
+
+The built CSS is located in the `css` directory. It contains an unminified and minified version.
+You can either cut and paste that css or link to it directly in your html.
+
+```html
+<link rel="stylesheet" href="path/to/module/css/css-background-repeat">
+```
+
+#### Development
+
+The source CSS files can be found in the `src` directory.
+Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+
+## The CSS
+
+```css
+/*
+   BACKGROUND REPEAT
+*/
+.bg-norep { background-repeat: no-repeat; }
+.bg-x { background-repeat: repeat-x; }
+.bg-y { background-repeat: repeat-y; }
+.bg-rep { background-repeat: repeat; }
+.bg-spc { background-repeat: space; }
+.bg-rnd { background-repeat: round; }
 @media screen and (min-width: 48em) {
-  .bg-norep-ns {  background-repeat: no-repeat; }
-  .bg-x-ns {      background-repeat: repeat-x; }
-  .bg-y-ns {      background-repeat: repeat-y; }
-  .bg-rep-ns {    background-repeat: repeat; }
-  .bg-spc-ns {    background-repeat: space; }
-  .bg-rnd-ns {    background-repeat: round; }
+ .bg-norep-ns { background-repeat: no-repeat; }
+ .bg-x-ns { background-repeat: repeat-x; }
+ .bg-y-ns { background-repeat: repeat-y; }
+ .bg-rep-ns { background-repeat: repeat; }
+ .bg-spc-ns { background-repeat: space; }
+ .bg-rnd-ns { background-repeat: round; }
 }
-
-@media screen and (min-width: 48em) and (max-width: 64em) {
-  .bg-norep-m {  background-repeat: no-repeat; }
-  .bg-x-m {      background-repeat: repeat-x; }
-  .bg-y-m {      background-repeat: repeat-y; }
-  .bg-rep-m {    background-repeat: repeat; }
-  .bg-spc-m {    background-repeat: space; }
-  .bg-rnd-m {    background-repeat: round; }
+@media screen and (min-width:48em) and (max-width: 64em) {
+ .bg-norep-m { background-repeat: no-repeat; }
+ .bg-x-m { background-repeat: repeat-x; }
+ .bg-y-m { background-repeat: repeat-y; }
+ .bg-rep-m { background-repeat: repeat; }
+ .bg-spc-m { background-repeat: space; }
+ .bg-rnd-m { background-repeat: round; }
 }
-
-@media screen and (min-width: 64em)  {
-  .bg-norep-l {  background-repeat: no-repeat; }
-  .bg-x-l {      background-repeat: repeat-x; }
-  .bg-y-l {      background-repeat: repeat-y; }
-  .bg-rep-l {    background-repeat: repeat; }
-  .bg-spc-l {    background-repeat: space; }
-  .bg-rnd-l {    background-repeat: round; }
+@media screen and (min-width: 64em) {
+ .bg-norep-l { background-repeat: no-repeat; }
+ .bg-x-l { background-repeat: repeat-x; }
+ .bg-y-l { background-repeat: repeat-y; }
+ .bg-rep-l { background-repeat: repeat; }
+ .bg-spc-l { background-repeat: space; }
+ .bg-rnd-l { background-repeat: round; }
 }
-
 ```
 
-## Author
+## Contributing
 
-[http://mrmrs.cc - Entire internet gateway to all things mrmrs](http://mrmrs.cc)
-[http://mrmrs.io - Open source projects](http://mrmrs.io)
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## Authors
+
+* [mrmrs](http://mrmrs.io)
+* [johno](http://johnotander.com)
 
 ## License
 
-The MIT License (MIT)
-
-Copyright (c) 2015 @mrmrs
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+MIT
 
