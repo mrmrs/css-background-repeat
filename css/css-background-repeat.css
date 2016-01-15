@@ -1,15 +1,34 @@
+/*
+   BACKGROUND REPEAT
+*/
+.bg-norep { background-repeat: no-repeat; }
+.bg-x { background-repeat: repeat-x; }
+.bg-y { background-repeat: repeat-y; }
+.bg-rep { background-repeat: repeat; }
+.bg-spc { background-repeat: space; }
+.bg-rnd { background-repeat: round; }
+@media screen and (min-width: 48em) {
+ .bg-norep-ns { background-repeat: no-repeat; }
+ .bg-x-ns { background-repeat: repeat-x; }
+ .bg-y-ns { background-repeat: repeat-y; }
+ .bg-rep-ns { background-repeat: repeat; }
+ .bg-spc-ns { background-repeat: space; }
+ .bg-rnd-ns { background-repeat: round; }
+}
+@media screen and (min-width:48em) and (max-width: 64em) {
+ .bg-norep-m { background-repeat: no-repeat; }
+ .bg-x-m { background-repeat: repeat-x; }
+ .bg-y-m { background-repeat: repeat-y; }
+ .bg-rep-m { background-repeat: repeat; }
+ .bg-spc-m { background-repeat: space; }
+ .bg-rnd-m { background-repeat: round; }
+}
+@media screen and (min-width: 64em) {
+ .bg-norep-l { background-repeat: no-repeat; }
+ .bg-x-l { background-repeat: repeat-x; }
+ .bg-y-l { background-repeat: repeat-y; }
+ .bg-rep-l { background-repeat: repeat; }
+ .bg-spc-l { background-repeat: space; }
+ .bg-rnd-l { background-repeat: round; }
+}
 
-  Postprocess tachyons stylesheets
-
-  Usage
-    $ tachyons <input.css>
-
-  Options
-    -m, --minify Minify the output stylesheet
-    --generate-docs Generate documentation for a given module
-    --package The path to the module package to be documented
-
-  Example
-    $ tachyons src/tachyons.css > dist/c.css
-    $ tachyons src/tachyons.css > dist/c.css --minify
-    $ tachyons src/tachyons-type-scale.css --generate-docs --package=./package.json > readme.md
