@@ -1,7 +1,7 @@
 {
   "name": "css-background-repeat",
   "style": "background-repeat.css",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "homepage": "http://github.com/mrmrs/css-background-repeat",
   "description": "Css module of single purpose classes for background repeat",
   "keywords": [
@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.0.2"
+    "tachyons-cli": "^1.0.4"
   },
   "scripts": {
     "start": "tachyons src/css-background-repeat.css > css/css-background-repeat.css && tachyons src/css-background-repeat.css --minify > css/css-background-repeat.min.css && tachyons src/css-background-repeat.css --generate-docs --package=../../package.json > readme.md"
