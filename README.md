@@ -1,10 +1,10 @@
-# css-background-repeat 0.0.7
+# css-background-repeat 1.0.5
 
 Css module of single purpose classes for background repeat
 
 #### Stats
 
-254 | 24 | 24
+261 | 24 | 24
 ---|---|---
 bytes | selectors | declarations
 
@@ -16,15 +16,25 @@ bytes | selectors | declarations
 npm install --save-dev css-background-repeat
 ```
 
+Learn more about using css installed with npm:
+* https://webpack.github.io/docs/stylesheets.html
+* https://github.com/defunctzombie/npm-css
+
 #### With Git
 
+http:
 ```
 git clone https://github.com/tachyons-css/css-background-repeat
 ```
 
+ssh:
+```
+git clone git@github.com:tachyons-css/css-background-repeat.git
+```
+
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
+#### Using with [Postcss](https://github.com/postcss/postcss)
 
 Import the css module
 
@@ -32,16 +42,24 @@ Import the css module
 @import "css-background-repeat";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
 
 ```sh
 $ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
+$ tachyons path/to/css-file.css > dist/t.css
 ```
 
-#### Using the CSS
+#### Using the css
 
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
+##### CDN
+The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
+
+```
+<link rel="stylesheet" href="http://unpkg.com/css-background-repeat@1.0.5/css/css-background-repeat.min.css" />
+```
+
+##### Locally
+The built css is located in the `css` directory. It contains an unminified and minified version.
 You can either cut and paste that css or link to it directly in your html.
 
 ```html
@@ -50,12 +68,13 @@ You can either cut and paste that css or link to it directly in your html.
 
 #### Development
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+The source css files can be found in the `src` directory.
+Running `$ npm start` will process the source css and place the built css in the `css` directory.
 
-## The CSS
+## The css
 
 ```css
+/* Media Queries */
 /*
    BACKGROUND REPEAT
 */
@@ -65,7 +84,7 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 .bg-rep { background-repeat: repeat; }
 .bg-spc { background-repeat: space; }
 .bg-rnd { background-repeat: round; }
-@media screen and (min-width: 48em) {
+@media (min-width: 48em) {
  .bg-norep-ns { background-repeat: no-repeat; }
  .bg-x-ns { background-repeat: repeat-x; }
  .bg-y-ns { background-repeat: repeat-y; }
@@ -73,7 +92,7 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
  .bg-spc-ns { background-repeat: space; }
  .bg-rnd-ns { background-repeat: round; }
 }
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media (min-width: 48em) and (max-width: 64em) {
  .bg-norep-m { background-repeat: no-repeat; }
  .bg-x-m { background-repeat: repeat-x; }
  .bg-y-m { background-repeat: repeat-y; }
@@ -81,7 +100,7 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
  .bg-spc-m { background-repeat: space; }
  .bg-rnd-m { background-repeat: round; }
 }
-@media screen and (min-width: 64em) {
+@media (min-width: 64em) {
  .bg-norep-l { background-repeat: no-repeat; }
  .bg-x-l { background-repeat: repeat-x; }
  .bg-y-l { background-repeat: repeat-y; }
@@ -107,3 +126,4 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 ## License
 
 ISC
+
