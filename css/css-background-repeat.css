@@ -1,3 +1,4 @@
+/* Media Queries */
 /*
    BACKGROUND REPEAT
 */
@@ -7,7 +8,7 @@
 .bg-rep { background-repeat: repeat; }
 .bg-spc { background-repeat: space; }
 .bg-rnd { background-repeat: round; }
-@media screen and (min-width: 48em) {
+@media (min-width: 48em) {
  .bg-norep-ns { background-repeat: no-repeat; }
  .bg-x-ns { background-repeat: repeat-x; }
  .bg-y-ns { background-repeat: repeat-y; }
@@ -15,7 +16,7 @@
  .bg-spc-ns { background-repeat: space; }
  .bg-rnd-ns { background-repeat: round; }
 }
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media (min-width: 48em) and (max-width: 64em) {
  .bg-norep-m { background-repeat: no-repeat; }
  .bg-x-m { background-repeat: repeat-x; }
  .bg-y-m { background-repeat: repeat-y; }
@@ -23,7 +24,7 @@
  .bg-spc-m { background-repeat: space; }
  .bg-rnd-m { background-repeat: round; }
 }
-@media screen and (min-width: 64em) {
+@media (min-width: 64em) {
  .bg-norep-l { background-repeat: no-repeat; }
  .bg-x-l { background-repeat: repeat-x; }
  .bg-y-l { background-repeat: repeat-y; }

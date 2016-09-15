@@ -1,3 +1,10 @@
+/* Media Queries */
+
+@custom-media --breakpoint-not-small (min-width: 48em);
+@custom-media --breakpoint-medium (min-width: 48em) and (max-width: 64em);
+@custom-media --breakpoint-large (min-width: 64em);
+
+
 /*
    BACKGROUND REPEAT
 */
@@ -9,7 +16,7 @@
   .bg-spc {    background-repeat: space; }
   .bg-rnd {    background-repeat: round; }
 
-@media screen and (min-width: 48em) {
+@media (--breakpoint-not-small) {
   .bg-norep-ns {  background-repeat: no-repeat; }
   .bg-x-ns {      background-repeat: repeat-x; }
   .bg-y-ns {      background-repeat: repeat-y; }
@@ -18,7 +25,7 @@
   .bg-rnd-ns {    background-repeat: round; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media (--breakpoint-medium) {
   .bg-norep-m {  background-repeat: no-repeat; }
   .bg-x-m {      background-repeat: repeat-x; }
   .bg-y-m {      background-repeat: repeat-y; }
@@ -27,7 +34,7 @@
   .bg-rnd-m {    background-repeat: round; }
 }
 
-@media screen and (min-width: 64em) {
+@media (--breakpoint-large) {
   .bg-norep-l {  background-repeat: no-repeat; }
   .bg-x-l {      background-repeat: repeat-x; }
   .bg-y-l {      background-repeat: repeat-y; }
