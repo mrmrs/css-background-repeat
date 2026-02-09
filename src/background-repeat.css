@@ -9,7 +9,7 @@
   .bg-spc {    background-repeat: space; }
   .bg-rnd {    background-repeat: round; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .bg-norep-s {  background-repeat: no-repeat; }
   .bg-x-s {      background-repeat: repeat-x; }
   .bg-y-s {      background-repeat: repeat-y; }
@@ -18,7 +18,7 @@
   .bg-rnd-s {    background-repeat: round; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .bg-norep-m {  background-repeat: no-repeat; }
   .bg-x-m {      background-repeat: repeat-x; }
   .bg-y-m {      background-repeat: repeat-y; }
@@ -27,7 +27,7 @@
   .bg-rnd-m {    background-repeat: round; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .bg-norep-l {  background-repeat: no-repeat; }
   .bg-x-l {      background-repeat: repeat-x; }
   .bg-y-l {      background-repeat: repeat-y; }
