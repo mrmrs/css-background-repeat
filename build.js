@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { transform } = require('lightningcss');
 
-const srcFile = path.join(__dirname, 'src', 'css-background-repeat.css');
+const srcFile = path.join(__dirname, 'src', 'background-repeat.css');
 const distDir = path.join(__dirname, 'dist');
 
 // Read source
@@ -15,22 +15,22 @@ if (!fs.existsSync(distDir)) {
 
 // Unminified — just normalize formatting
 const { code: unminified } = transform({
-  filename: 'css-background-repeat.css',
+  filename: 'background-repeat.css',
   code: Buffer.from(source),
   minify: false,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-background-repeat.css'), unminified);
+fs.writeFileSync(path.join(distDir, 'background-repeat.css'), unminified);
 
 // Minified
 const { code: minified } = transform({
-  filename: 'css-background-repeat.css',
+  filename: 'background-repeat.css',
   code: Buffer.from(source),
   minify: true,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-background-repeat.min.css'), minified);
+fs.writeFileSync(path.join(distDir, 'background-repeat.min.css'), minified);
 
 console.log('Build complete:');
-console.log(`  dist/css-background-repeat.css     ${unminified.length} bytes`);
-console.log(`  dist/css-background-repeat.min.css ${minified.length} bytes`);
+console.log(`  dist/background-repeat.css     ${unminified.length} bytes`);
+console.log(`  dist/background-repeat.min.css ${minified.length} bytes`);
