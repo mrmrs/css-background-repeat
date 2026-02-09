@@ -1,38 +1,44 @@
 {
   "name": "css-background-repeat",
-  "style": "background-repeat.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-background-repeat",
-  "description": "Css module of single purpose classes for background repeat",
+  "version": "2.0.0",
+  "description": "Functional CSS for background-repeat",
+  "style": "dist/background-repeat.css",
+  "main": "dist/background-repeat.css",
+  "exports": {
+    ".": "./dist/background-repeat.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "background-repeat"
+    "background-repeat",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-background-repeat": {
+  "homepage": "https://github.com/mrmrs/css-background-repeat",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-background-repeat.git"
+    "url": "https://github.com/mrmrs/css-background-repeat.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-background-repeat/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-background-repeat/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
