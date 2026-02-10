@@ -1,101 +1,101 @@
-.bg-norep {
+.bg-norepeat {
   background-repeat: no-repeat;
 }
 
-.bg-x {
+.bg-repeat-x {
   background-repeat: repeat-x;
 }
 
-.bg-y {
+.bg-repeat-y {
   background-repeat: repeat-y;
 }
 
-.bg-rep {
+.bg-repeat {
   background-repeat: repeat;
 }
 
-.bg-spc {
+.bg-space {
   background-repeat: space;
 }
 
-.bg-rnd {
+.bg-round {
   background-repeat: round;
 }
 
 @media screen and (width >= 32em) {
-  .bg-norep-s {
+  .bg-norepeat-s {
     background-repeat: no-repeat;
   }
 
-  .bg-x-s {
+  .bg-repeat-x-s {
     background-repeat: repeat-x;
   }
 
-  .bg-y-s {
+  .bg-repeat-y-s {
     background-repeat: repeat-y;
   }
 
-  .bg-rep-s {
+  .bg-repeat-s {
     background-repeat: repeat;
   }
 
-  .bg-spc-s {
+  .bg-space-s {
     background-repeat: space;
   }
 
-  .bg-rnd-s {
+  .bg-round-s {
     background-repeat: round;
   }
 }
 
 @media screen and (width >= 48em) {
-  .bg-norep-m {
+  .bg-norepeat-m {
     background-repeat: no-repeat;
   }
 
-  .bg-x-m {
+  .bg-repeat-x-m {
     background-repeat: repeat-x;
   }
 
-  .bg-y-m {
+  .bg-repeat-y-m {
     background-repeat: repeat-y;
   }
 
-  .bg-rep-m {
+  .bg-repeat-m {
     background-repeat: repeat;
   }
 
-  .bg-spc-m {
+  .bg-space-m {
     background-repeat: space;
   }
 
-  .bg-rnd-m {
+  .bg-round-m {
     background-repeat: round;
   }
 }
 
 @media screen and (width >= 96em) {
-  .bg-norep-l {
+  .bg-norepeat-l {
     background-repeat: no-repeat;
   }
 
-  .bg-x-l {
+  .bg-repeat-x-l {
     background-repeat: repeat-x;
   }
 
-  .bg-y-l {
+  .bg-repeat-y-l {
     background-repeat: repeat-y;
   }
 
-  .bg-rep-l {
+  .bg-repeat-l {
     background-repeat: repeat;
   }
 
-  .bg-spc-l {
+  .bg-space-l {
     background-repeat: space;
   }
 
-  .bg-rnd-l {
+  .bg-round-l {
     background-repeat: round;
   }
 }
