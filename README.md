@@ -1,128 +1,92 @@
-# css-background-repeat 1.0.6
+# css-background-repeat
 
-Css module of single purpose classes for background repeat
+Functional CSS for background-repeat
 
-#### Stats
+## Filesize
 
-254 | 24 | 24
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/background-repeat.css` | 1373 bytes |
+| `dist/background-repeat.min.css` | 1035 bytes (209 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-background-repeat
-```
-
-Learn more about using css installed with npm:
-* https://webpack.github.io/docs/stylesheets.html
-* https://github.com/defunctzombie/npm-css
-
-#### With Git
-
-http:
-```
-git clone https://github.com/tachyons-css/css-background-repeat
-```
-
-ssh:
-```
-git clone git@github.com:tachyons-css/css-background-repeat.git
+```sh
+npm install css-background-repeat
 ```
 
 ## Usage
 
-#### Using with [Postcss](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-background-repeat";
 ```
 
-Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons path/to/css-file.css > dist/t.css
-```
-
-#### Using the css
-
-##### CDN
-The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
-
-```
-<link rel="stylesheet" href="http://unpkg.com/css-background-repeat@1.0.6/css/css-background-repeat.min.css" />
-```
-
-##### Locally
-The built css is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-background-repeat">
+<link rel="stylesheet" href="https://unpkg.com/css-background-repeat/dist/background-repeat.min.css">
 ```
 
-#### Development
+### Direct
 
-The source css files can be found in the `src` directory.
-Running `$ npm start` will process the source css and place the built css in the `css` directory.
-
-## The css
-
-```css
-/*
-   BACKGROUND REPEAT
-*/
-.bg-norep { background-repeat: no-repeat; }
-.bg-x { background-repeat: repeat-x; }
-.bg-y { background-repeat: repeat-y; }
-.bg-rep { background-repeat: repeat; }
-.bg-spc { background-repeat: space; }
-.bg-rnd { background-repeat: round; }
-@media screen and (min-width: 48em) {
- .bg-norep-ns { background-repeat: no-repeat; }
- .bg-x-ns { background-repeat: repeat-x; }
- .bg-y-ns { background-repeat: repeat-y; }
- .bg-rep-ns { background-repeat: repeat; }
- .bg-spc-ns { background-repeat: space; }
- .bg-rnd-ns { background-repeat: round; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .bg-norep-m { background-repeat: no-repeat; }
- .bg-x-m { background-repeat: repeat-x; }
- .bg-y-m { background-repeat: repeat-y; }
- .bg-rep-m { background-repeat: repeat; }
- .bg-spc-m { background-repeat: space; }
- .bg-rnd-m { background-repeat: round; }
-}
-@media screen and (min-width: 64em) {
- .bg-norep-l { background-repeat: no-repeat; }
- .bg-x-l { background-repeat: repeat-x; }
- .bg-y-l { background-repeat: repeat-y; }
- .bg-rep-l { background-repeat: repeat; }
- .bg-spc-l { background-repeat: space; }
- .bg-rnd-l { background-repeat: round; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-background-repeat/dist/background-repeat.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.bg-norepeat` | `background-repeat: no-repeat;` |
+| `.bg-repeat-x` | `background-repeat: repeat-x;` |
+| `.bg-repeat-y` | `background-repeat: repeat-y;` |
+| `.bg-repeat` | `background-repeat: repeat;` |
+| `.bg-space` | `background-repeat: space;` |
+| `.bg-round` | `background-repeat: round;` |
+| `.bg-norepeat-s` | `background-repeat: no-repeat;` |
+| `.bg-repeat-x-s` | `background-repeat: repeat-x;` |
+| `.bg-repeat-y-s` | `background-repeat: repeat-y;` |
+| `.bg-repeat-s` | `background-repeat: repeat;` |
+| `.bg-space-s` | `background-repeat: space;` |
+| `.bg-round-s` | `background-repeat: round;` |
+| `.bg-norepeat-m` | `background-repeat: no-repeat;` |
+| `.bg-repeat-x-m` | `background-repeat: repeat-x;` |
+| `.bg-repeat-y-m` | `background-repeat: repeat-y;` |
+| `.bg-repeat-m` | `background-repeat: repeat;` |
+| `.bg-space-m` | `background-repeat: space;` |
+| `.bg-round-m` | `background-repeat: round;` |
+| `.bg-norepeat-l` | `background-repeat: no-repeat;` |
+| `.bg-repeat-x-l` | `background-repeat: repeat-x;` |
+| `.bg-repeat-y-l` | `background-repeat: repeat-y;` |
+| `.bg-repeat-l` | `background-repeat: repeat;` |
+| `.bg-space-l` | `background-repeat: space;` |
+| `.bg-round-l` | `background-repeat: round;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.bg-norepeat-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/background-repeat.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/background-repeat.css` — formatted
+- `dist/background-repeat.min.css` — minified
 
 ## License
 
-ISC
-
+MIT
